@@ -1,0 +1,17 @@
+/* EXAMPLE OF GO TO STATEMENT */
+#include <stdio.h>
+main()
+{goto first;
+
+   third:
+   printf("my last name is singh\n");
+   goto end;
+   second:
+   printf("my middle name is kumar\n");
+   goto third;
+   first:
+   printf("my first name is shubham\n");
+   goto second;
+    end:
+    printf("done :-)");
+}
