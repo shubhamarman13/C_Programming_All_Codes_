@@ -57,6 +57,7 @@
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "files.associations": {
-    "table_of_any_number_.C": "cpp"
+    "table_of_any_number_.C": "cpp",
+    "triangle_is_possible_or_not_by_given_sides.C": "cpp"
   }
 }
