@@ -14,3 +14,4 @@ printf("%c is a alphabate",charecter);
 else
 printf("%c is a charector",charecter);
 }
+
