@@ -1,0 +1,13 @@
+// code to find that a number which is given by the user is greater than 10 or less than 10//
+#include <stdio.h>
+void  main()
+{ int number ;
+printf("Enter the number\n");
+scanf("%d", &number);
+if (number>10)
+    printf("%d is greater then 10",number);
+else if (number<10)
+     printf("%d is less then 10",number);
+else
+    printf("%d is equal to the %d",number,number);
+} 
