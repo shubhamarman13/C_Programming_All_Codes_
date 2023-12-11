@@ -1,0 +1,22 @@
+/* code for the price distribution if pass in both science and maths will 
+get 1 copy and 1 pen cost  and if passes in maths only then he will get a copy only 
+if he  passes in science only he will get a pen only */
+#include <stdio.h>
+main()
+{int maths ,science;
+printf("Enter the marks of Maths\n");
+scanf("%d",&maths);
+printf("Enter the marks of science \n ");
+scanf("%d",&science);
+printf("You have entered your marks \nmaths= %d \nscience=%d\n",maths,science);
+if(maths>35&&science>35)
+    printf("\ncongratulation you got a prize as 1 pen and 1 copy cost 45 rupees  ");
+
+else if  (maths>35)
+printf(" you  are passed in maths only so you will get a gift as 1 copy cost 15 rupees ");
+else if (science>35)
+printf(" you  are passed in science  only so you will  you get a gift as 1 pen cost 15 rupees");
+else 
+printf("sorry you are failed in both subjects ");
+
+}

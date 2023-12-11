@@ -1,0 +1,22 @@
+//This is a code to find the maximum value from the array 
+#include <stdio.h>
+int main()
+{
+    int number[5];
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Enter the no. %d ", i + 1);
+        scanf("%d", &number[i]);
+    }
+    int max = number[0];
+    for (int i = 0; i < 5; i++)
+    {
+        if (number[i] > max)
+        {
+            max = number[i];
+        }
+    }
+    printf("The maximum value among all the elements is = %d", max);
+    return 0;
+}

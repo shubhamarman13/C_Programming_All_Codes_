@@ -1,0 +1,17 @@
+/* code for the no. of digit in a given integer*/
+
+#include <stdio.h>  
+main()  
+{  
+   int number ; 
+   int count=0;     
+   printf("Enter the number");  
+   scanf("%d",&number);  
+   while(number !=0)  
+   {  
+       number=number/10;  
+       count=count+1;  
+   }  
+   printf("\n Total digit = : %d",count);  
+     
+}  

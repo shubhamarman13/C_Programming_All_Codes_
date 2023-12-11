@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    float sum = 0, ave;
+    int num, i = 0;
+    do
+    {
+        i = i + 1;
+        printf("\n");
+        printf("Enter the number \n");
+        scanf("%d", &num);
+        sum = sum + num;
+        printf("Do you have more item 'Y/N'\n");
+    } while (toupper(getch()) == 'Y');
+    ave = sum / i;
+
+    printf("ave= %.2f", ave);
+}

@@ -1,0 +1,36 @@
+/*calculator*/
+
+#include <stdio.h>
+main()
+{   printf("WELCOME TO THE SHUBHAM ARMAN's CALCULATOR \n");
+
+    float num1, num2;
+    char calcu;
+
+    printf("Enter the first num\n");
+    scanf("%f", &num1);
+    printf("ENTER YOUR CHOICE FOR CALCULATION ;\n+\n-\n*\n/\n");
+    scanf("%s", &calcu);
+    printf("Enter the 2nd num\n");
+    scanf("%f", &num2);
+    printf("******************************\n\n");
+    switch (calcu)
+    {
+    case '+':
+        printf("%0.2f+%0.2f=%0.2f", num1, num2, num1 + num2);
+        break;
+    case '-':
+        printf("%0.2f-%0.2f=%0.2f", num1, num2, num1 - num2);
+        break;
+    case '*':
+        printf("%0.2f*%0.2f=%0.2f", num1, num2, num1 * num2);
+        break;
+
+    case '/':
+        printf("%0.2f/%0.2f=%0.2f", num1, num2, num1 / num2);
+        break;
+
+    default:
+        break;
+    }
+}

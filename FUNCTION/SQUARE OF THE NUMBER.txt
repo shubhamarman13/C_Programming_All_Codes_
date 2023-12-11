@@ -1,0 +1,15 @@
+/* code to find the square of a number given by the user */
+#include <stdio.h>
+int square(int a)
+{
+  int seq=a*a;
+  printf("square of %d is =%d",a,seq);
+  return 0;
+}
+main()
+{
+  int num;
+  printf("Enter the no to find the square\n");
+  scanf("%d",&num);
+  square(num);
+}

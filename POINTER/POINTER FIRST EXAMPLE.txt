@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+    int a = 76;
+    int *ptra = &a;
+    printf("the adress  of a is %x\n", &a);
+    printf("the adress  of pointer is %x\n", &ptra);
+    printf("the value  of a is %d\n", *ptra);
+    printf("the adress  of a throgh pointer  %x", ptra);
+}

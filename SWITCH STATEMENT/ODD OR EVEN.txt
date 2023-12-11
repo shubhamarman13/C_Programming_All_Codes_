@@ -1,0 +1,20 @@
+/* code to find ODD OR EVEN*/
+
+#include <stdio.h>
+main()
+{
+    int num1;
+    printf("Enter the number \n");
+    scanf("%d", &num1);
+
+    switch (num1 %2==0)
+    {
+    case 0:
+        printf("ODD");
+        break;
+
+    default:
+        printf("EVEN");
+        break;
+    }
+}

@@ -1,0 +1,39 @@
+//this is a code to input several input in array then find which one was odd and which oe was even
+#include <stdio.h>
+int main()
+{
+    int num[10], even[10], odd[10];
+    int tempeve = 0, tempodd = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        printf("Enter the element no. %d\n", i + 1);
+        scanf("%d", &num[i]);
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        if (num[i] % 2 == 0)
+        {
+            even[tempeve] = num[i];
+            tempeve = tempeve + 1;
+        }
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        if (num[i] % 2 == 1)
+        {
+            odd[tempodd] = num[i];
+            tempodd = tempodd + 1;
+        }
+    }
+    printf("\nEven elements are = ");
+
+    for (int i = 0; i < tempeve; i++)
+    {
+        printf("%d , ", even[i]);
+    }
+    printf("\nOdd elements are =");
+    for (int i = 0; i < tempodd; i++)
+    {
+        printf("%d , ", odd[i]);
+    }
+}

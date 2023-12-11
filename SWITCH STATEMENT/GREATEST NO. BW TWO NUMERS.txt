@@ -1,0 +1,22 @@
+/* code to find greater no. among two through switch statement*/
+
+#include <stdio.h>
+main()
+{
+    int num1, num2;
+    printf("Enter the first number \n");
+    scanf("%d", &num1);
+    printf("Enter the 2nd  number \n");
+    scanf("%d", &num2);
+
+    switch (num1 > num2)
+    {
+    case 0:
+        printf("%d is greater then %d", num2, num1);
+        break;
+
+    default:
+        printf("%d is greater then %d", num1, num2);
+        break;
+    }
+}

@@ -1,0 +1,8 @@
+// WITH THE HELP OF FOR LOOP PRINT NATURAL NUMBERS FROM 1 TO 20//
+#include <stdio.h>
+void main()
+{int i;
+// printf("entr the numnbr ");
+for (i=0; i<=20; i=i+1)
+printf(" %d\n",i);
+}

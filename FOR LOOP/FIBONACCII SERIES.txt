@@ -1,0 +1,18 @@
+/* code to print the fibonacci series by SHUBHAM ARMAN*/
+#include <stdio.h>
+ void main()
+{
+    int x,i,a=0,b=1;
+int next=a+b;
+printf("Enter the number of terms \n");
+scanf("%d",&x);
+printf("fibonacci series= %d, %d, ",a,b);
+for ( i = 1; i <=x; i++)
+{
+    a=b;
+    b=next;
+    next=a+b;
+    printf("%d,",next);
+}
+
+}

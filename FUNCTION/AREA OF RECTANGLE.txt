@@ -1,0 +1,19 @@
+/* area of rectangle using fiunction*/
+#include <stdio.h>
+
+int area(int length, int breath)
+{
+  int AREA;
+  AREA = 2 * (length) * (breath);
+  printf("area=%d", AREA);
+ 
+}
+int main()
+{
+  int l,b;
+  printf("enter the length\n");
+  scanf("%d", &l);
+  printf("enter the breath\n");
+  scanf("%d", &b);
+  area(l,b);
+}

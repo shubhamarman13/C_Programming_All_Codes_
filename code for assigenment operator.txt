@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{int p,q,r,s,t,u,v;
+p=26;
+q=45; 
+r=67;
+s=q++;
+t=++p+q+r--;
+u=r-p+--s;
+v=++u-10;
+printf("%d\n",s);
+printf("%d\n",t);
+printf("%d\n",u);
+printf("%d",v);
+    return 0;
+}

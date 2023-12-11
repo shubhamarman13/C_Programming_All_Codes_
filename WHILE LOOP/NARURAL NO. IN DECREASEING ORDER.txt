@@ -1,0 +1,12 @@
+// Write a C program to print all natural numbers in reverse (from n to 1). - using while loop
+#include <stdio.h>
+main()
+{ int x;
+printf("Enter the number from where you want to print the natural in Decreasing order\n");
+scanf("%d",&x);
+ while(x>=0)
+ {
+     printf("%d ",x);
+     x=x-1;
+ }
+}

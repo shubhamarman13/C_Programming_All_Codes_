@@ -1,0 +1,9 @@
+/* code for the cube of the given upto last number */
+#include <stdio.h>
+void main()
+{int i ,j;
+printf("print the last number \n");
+scanf("%d",&j);
+for(i=1;i<=j;i++)
+printf("The cube of %d=%d\n",i,(i*i*i));
+}

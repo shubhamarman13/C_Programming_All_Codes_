@@ -1,0 +1,23 @@
+/* CODE FOR THE ELIGIBLITY OF THE ADDMISON ON THE BASIS OF PHYSICS ,MATHS AND CHEMISTRY MARKS /*
+#include <stdio.h>
+main()
+{int math,phy,chem,total;
+printf("Enter the marks of Maths=\n");
+scanf("%d",&math);
+printf("Enter the marks of physics\n");
+scanf("%d",&phy);
+printf("Enter the marks of chemistry\n");
+scanf("%d",&chem);
+total=math+phy+chem;
+printf("total=%d\n",total);
+if (math<65)
+printf("You have less than 65 marks in maths\n");
+ if (phy<65)
+printf("You have less then 60 marks in physics\n");
+if (chem<50)
+printf("you have less than 50 marks in chemistry\n");
+if((math<65)&&(phy<65)&&(chem<50))
+printf("\n**Due to low marks in perticular subject  you are not eligible for addmison**");
+else
+printf("\n **You are eligible for the addmiosn**");
+} 

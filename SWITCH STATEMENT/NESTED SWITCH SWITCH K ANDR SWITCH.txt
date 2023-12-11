@@ -1,0 +1,41 @@
+#include <stdio.h>
+main()
+{
+    int age , marks;
+    
+    printf("Enter your age \n");
+    scanf("%d", &age);
+    printf("Enter your marks  \n");
+    scanf("%d", &marks);
+
+    switch (age)
+    {
+    case 3:
+        printf("THE AGE IS 3\n");
+        switch (marks)
+        {
+        case 65:
+            printf("your marks is 65");
+            break;
+        
+        default:
+        printf("YOUR MARKS IS NOT 65");
+        }
+        break;
+    case 5:
+        printf("age is 5\n");
+         switch (marks)
+        {
+        case 65:
+            printf("your marks is 65");
+            break;
+        
+        default:
+        printf("YOUR MARKS IS NOT 65");
+        }
+        break;
+    default:
+        printf("age is neigther 3 nor 5 you have entered yor age as %d", age);
+    }
+}
+

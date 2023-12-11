@@ -1,0 +1,27 @@
+// 1 2 5 10
+// 50 100 KA NOTE HAI ENTER KANA HAI AMOUNT OR SABSE CHOTA NOTE KA COLLECTION BATAN HAI
+#include <stdio.h>
+int main()
+{
+
+    int new, rupees, hundred, fifty, ten, five, two, one;
+    char x = '*';
+    printf("Enter the amount\n");
+    scanf("%d", &rupees);
+    hundred = rupees / 100;
+    new = rupees % 100;
+    fifty = new / 50;
+    new = new % 50;
+    ten = new / 10;
+    new = new % 10;
+    two = new / 2;
+    new = new % 2;
+    one = new / 1;
+
+    printf("Notes of Hundreds = %d\n", hundred);
+    printf("Notes of Fifty= %d\n", fifty);
+    printf("Notes of Twenty=%d\n", ten);
+    printf("Notes of Ten=%d\n", two);
+    printf("Notes of Two=%d\n", one);
+    return 0;
+}

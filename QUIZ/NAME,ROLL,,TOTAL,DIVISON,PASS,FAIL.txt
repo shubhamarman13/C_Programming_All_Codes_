@@ -1,0 +1,39 @@
+
+/*  CODE TO PRINT NAME, ROLL NO., MARKS OF GIOVEN THREE SUBJECTS,
+ TOTAL,PERCENTAGE, DIVISON */
+ 
+#include <stdio.h>
+void main()
+{char Name[200];
+int Rollno,Maths,physics,cs,total;
+float percentage;
+printf("Enter your name\n");
+gets(Name);
+printf("Enter your rollno\n");
+scanf("%d",&Rollno);
+printf("Enter the marks of physics\n");
+scanf("%d",&physics);
+printf("Enter the marks of Maths\n");
+scanf("%d",&Maths);
+printf("Enter the marks of CS\n");
+scanf("%d",&cs);
+total=physics+Maths+cs;
+percentage=total*100/300;
+printf("*******************************\n");
+printf("NAME= %s\n",Name);
+printf("Roll no=%d\n",Rollno);
+printf("Marks of Maths=%d\n",Maths);
+printf("Marks of Physics=%d\n",physics);
+printf("Marks of CS=%d\n",cs);
+printf("*******************\n");
+printf("Total Marks= %d\n",total);
+printf("percentage=%0.2f%%\n",percentage);
+if (percentage>60)
+printf("Divison= First Divison");
+if ((percentage>35)&&(percentage<60))
+printf("Divison=2nd Divison");
+if ((percentage>23)&&(percentage<=35))
+printf("Divison= 3rd Divison");
+if (percentage<23)
+printf("failed");
+}

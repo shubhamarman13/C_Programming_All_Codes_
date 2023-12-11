@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    char NAME[20][20];
+    int contact[10];
+    int i = 0;
+    do
+    {
+        fflush(stdin);
+        // fflush buffer  ko clean kar deta hai jab wapis loop me aata hai to
+        printf("Enter the name of %d student\n", i + 1);
+        // scanf("%s", &NAME[i]);
+        // scanf kaam nai kar rha hai
+        gets(NAME[i]);
+        printf("Enter the contact number \n");
+        // gets(contact[i]);
+        scanf("%d", &contact[i]);
+        i = i + 1;
+
+        printf("Do you have more item 'Y/N'\n");
+    } while (toupper(getch()) == 'Y');
+
+    for (int j = 0; j < i; j++)
+    {
+        printf("name of %d student is %s\n", j + 1, NAME[j]);
+        printf("contact  no. = %d\n", contact[j]);
+    }
+}

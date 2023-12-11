@@ -1,0 +1,14 @@
+
+// code to check wheather a letter is upper case or lower case 
+#include<stdio.h>
+#include<conio.h>
+main()
+{char c;
+printf("nEnter the alphabet:\n ");
+c = getche();
+// scanf("%c",&c);
+if(c>='A' && c <='Z')
+printf(" Upper case letterln ");
+else
+printf(" lower case letter");
+}

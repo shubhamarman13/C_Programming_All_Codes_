@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int marks[5];
+    for (int i = 0; i < 5; i++)
+    {
+        printf("enter the marks of %d student \n", i + 1);
+        scanf("%d", &marks[i]);
+    }
+    printf("the value of given elements are below\n");
+    for (int j = 0; j < 5; j++)
+    {
+        printf(" %d ", marks[j]);
+    }
+    printf("\nthe reverse value of given elemts are below\n");
+    for (int k = 4; k >= 0; k--)
+    {
+        printf("%d ", marks[k]);
+    }
+
+    return 0;
+}

@@ -1,0 +1,28 @@
+// Write a program in C to copy the elements of one array into another array
+#include <stdio.h>
+main()
+{
+    int aray[4];
+    int araay2[4];
+    for (int i = 0; i < 4; i++)
+    {
+        printf("Enter the element no. %d\n", i);
+        scanf("%d", &aray[i]);
+    }
+    printf("\n******printing the value of  first array before copying***\n ");
+    for (int i = 0; i < 4; i++)
+    {
+
+        printf("Value of Element no %d = %d\n", i, aray[i]);
+    }
+    for (int i = 0; i < 4; i++)
+    {
+        araay2[i] = aray[i];
+    }
+    printf("\n****now after copying the value of array one in araay2*** \n");
+    for (int i = 0; i < 4; i++)
+    {
+
+        printf("Value of Element no %d = %d\n", i, araay2[i]);
+    }
+}

@@ -1,0 +1,19 @@
+/* code to find a number given by the user is odd or even */
+#include <stdio.h>
+// int find_odd_even(int a);
+int find_odd_even(int z)
+{
+    if (z % 2 == 0)
+        printf("Even");
+
+    else
+        printf("Odd");
+    return 0;
+}
+void main()
+{
+    int num;
+    printf("Enter the no. to find its odd or even\n");
+    scanf("%d", &num);
+    find_odd_even(num);
+}

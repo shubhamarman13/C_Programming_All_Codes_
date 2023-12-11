@@ -1,0 +1,13 @@
+/* code to print natural number with the help of do while  given by the user */
+#include <stdio.h>
+main()
+{int i,j;
+printf("Enter the begaining  number \n");
+scanf("%d",&i);
+printf("Enter the end of the number \n");
+scanf("%d",&j);
+do{
+    printf("%d\n",i);
+    i=i+1;
+}while(i<=j);
+}

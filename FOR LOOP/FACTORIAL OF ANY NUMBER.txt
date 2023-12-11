@@ -1,0 +1,16 @@
+/* code for the factorial of any number*/
+
+#include <stdio.h>
+main()
+{int i, num ;
+printf("Enter the number whose factorial you want to print\n ");
+scanf("%d",&num);
+int fact;
+int sum =num;
+for (i=num;i>1;i--)
+{
+fact=(i-1);
+sum=(sum*fact);
+} 
+printf(" factorial of %d is =%d\n",num,sum);
+}

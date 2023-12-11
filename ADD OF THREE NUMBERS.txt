@@ -1,0 +1,8 @@
+// ADD OF THREE INTEGERS GIVEN BY THE USER //
+#include<stdio.h>
+ void main()
+{int a,b,c;
+printf("Enter three number to add \n");
+scanf("%d  %d  %d", &a,&b,&c);
+printf(" sum of the given numbers is =%d ", a+b+c );
+} 

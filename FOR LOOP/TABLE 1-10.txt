@@ -1,0 +1,16 @@
+/*  multiplication of table 1-10 */
+#include <stdio.h>
+main()
+{int i,j;
+// printf("Enter the min number \n");
+// scanf("%d",&min);
+// printf("Enter the max number \n");
+// scanf("%d",&max);
+for(i=1;i<=5;i++)
+{
+    printf("\n multiplication of %d\n",i);
+    for(j=1;j<=10;j++)
+    printf("%d X %d=%d\n",i,j,(i*j));
+}
+printf("\n------------------\n");
+}

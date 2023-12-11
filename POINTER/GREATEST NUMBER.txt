@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+int greatest(int *num1, int *num2)
+{
+    int grt;
+    if (*num1 > *num2)
+    {
+        grt = *num1;
+    }
+    else
+        grt = *num2;
+    return grt;
+}
+main()
+{
+    int a = 5, b = 4;
+    int great;
+    great = greatest(&a, &b);
+    printf(" greatest b/w %d and %d  is %d", a, b, great);
+}

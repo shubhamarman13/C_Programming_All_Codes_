@@ -1,0 +1,16 @@
+// code to insert multiple strings in array 
+#include <stdio.h>
+int main()
+{
+    char variable[5][100];
+
+    for (int i = 0; i < 4; i++)
+    {
+        printf("Enter the name of roll no . %d\n", i+1);
+        scanf("%s", variable[i]);
+    }
+    for (int i = 0; i < 4; i++)
+    {
+        printf("Rollno. %d  is %s\n", i+1, variable[i]);
+    }
+}

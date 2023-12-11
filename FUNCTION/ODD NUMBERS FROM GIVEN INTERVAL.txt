@@ -1,0 +1,20 @@
+// Write a C program to find all even numbers between given interval using functions.
+#include <stdio.h>
+int even(int a, int b)
+{
+    while (a <= b)
+    {
+        if (a % 2 == 1)
+
+            printf("%d\n", a);
+        a = a + 1;
+    }
+}
+void main()
+{
+    int x, y;
+    printf("Eneter the number from where to where do you want to print the odd number\n ");
+    scanf("%d\n %d", &x, &y);
+    printf("ALL ODD NUMBERS FROM %d - %d IS BELOW\n",x,y);
+    even(x, y);
+}

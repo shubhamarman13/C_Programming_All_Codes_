@@ -1,0 +1,9 @@
+/* code to print how many times do you want to print a text */
+#include <stdio.h>
+main()
+{ int num ,i;
+printf("Ente how many times do you want to print SHUBHAM ARMAN\n");
+scanf("%d",&num);
+for (i=1;i<=num;i++)
+printf("SHUBHAM ARMAN\n");
+}

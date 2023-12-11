@@ -1,0 +1,22 @@
+// code to find the average
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    char a;
+    int x;
+    int i = 0;
+    int sum = 0;
+    do
+    {
+        printf("\nEnter the number\n");
+        scanf("%d", &x);
+        i = i + 1;
+        sum = sum + x;
+
+        printf("Do you want to continue y/n\n ");
+    } while ((a = getche()) == 'y');
+    printf("\nsum=%d\n", sum);
+    printf("ave = %d", sum / i);
+    return 0;
+}

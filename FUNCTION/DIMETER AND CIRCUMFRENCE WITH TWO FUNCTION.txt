@@ -1,0 +1,23 @@
+/* code for dimeter and circumfrence with two different fuction*/
+
+#include <stdio.h>
+#include <math.h>
+int dimeter(int radius)
+{
+  int di = 2 * radius;
+  return (di);
+}
+
+
+int circumfrence(int radius)
+{
+  int circum = 2 * (21 / 7) * radius;
+  return (circum);
+}
+
+
+int main()
+{
+  printf("dimeter = %d cir= %d\n", dimeter(7), circumfrence(7));
+  return 0;
+}

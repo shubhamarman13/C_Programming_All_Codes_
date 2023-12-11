@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+int additionoftwonumber(int *num1, int *num2)
+{
+    int sum;
+    sum = *num1 + *num2;
+    return sum;
+}
+main()
+
+{
+    int a = 6;
+    int b = 7;
+    int add;
+    int sum = additionoftwonumber(&a, &b);
+    printf("sum of two numbers is = %d", sum);
+}

@@ -1,0 +1,32 @@
+// first code of structure 
+
+#include <stdio.h>
+#include <string.h> /*string data type add karne k leye ye lagaya gaya hai*/
+struct student
+{
+    int id;
+    int marks;
+    char fav_char;
+    char name[32];
+};
+
+int main()
+{
+    struct student harry, ravi, shubham;
+    harry.id = 1;
+    harry.marks = 45;
+    harry.fav_char = 's';
+    ravi.id = 2;
+    ravi.marks = 55;
+    ravi.fav_char = 'b';
+    strcpy(harry.name, "harry ka name  harry potter hai");
+    //  yaha par strcpy lagya gaya hai string data type k leye
+    printf("harry id is %d \n", harry.id);
+    printf("harry marks  is %d\n", harry.marks);
+    printf("harry fav char  is %c \n", harry.fav_char);
+    printf("name of harry is= %s", harry.name);
+    printf("\n");
+    printf("ravi id is %d \n", ravi.id);
+    printf("ravi marks  is %d \n", ravi.marks);
+    printf("ravi char  is %d \n", ravi.fav_char);
+}

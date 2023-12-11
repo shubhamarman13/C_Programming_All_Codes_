@@ -1,0 +1,17 @@
+/* code to print natural number with do while loop */
+
+#include <stdio.h>
+main()
+{
+    int num, last;
+    printf("Enter the first  number  \n");
+    scanf("%d", &num);
+    printf("Enter the last  number  \n");
+    scanf("%d", &last);
+    do
+    {
+        printf("%d\n", num);
+        num = num + 1;
+    } while (num <= last);
+
+}

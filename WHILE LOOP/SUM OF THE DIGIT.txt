@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+  int num, sum = 0, digit, temp;
+  printf("This is a code to find the sum of digit \n");
+  printf("Enter the  integer\n");
+  scanf("%d", &num);
+  temp = num;
+  while (temp > 0)
+  {
+    digit = temp % 10;
+    sum = sum + digit;
+    temp = temp / 10;
+  }
+  printf(" The sum of digit of %d is= %d", num, sum);
+}

@@ -1,0 +1,45 @@
+// code to print the calculator of change in unit//
+#include <stdio.h>
+void main()
+{
+    int first, second;
+    char input;
+    printf("THIS IS A CALCULATOER FOR CHANGE IN UNIT \n");
+    float onekilometer = 0.621371;
+    float onehour = 3600;
+    float onepound = 0.453592;
+    float onemeter = 3.28084;
+
+    printf("Enter one of the code  for the calculation \n q to quit\n1 kilo meter to mile\n2 hour to second\n3 pound to kg \n4 meter to feet \n");
+    scanf("%c", &input);
+    switch (input)
+    {
+    case 'q':
+        printf("quiting the program.....\n");
+        // goto end;
+        break;
+    case '1':
+        printf("Enter the first unit  for the converstion \n");
+        scanf("%d", &first);
+        printf("%d kilometer = %0.2f mile ", first, first * onekilometer);
+
+        break;
+    case '2':
+        printf("Enter the first unit  for the converstion \n");
+        scanf("%d", &first);
+        printf("%d hours =%0.2f second", first, first * onehour);
+        break;
+    case '3':
+        printf("Enter the first unit  for the converstion \n");
+        scanf("%d", &first);
+        printf("%d pound = %0.4f kg ", first, first * onepound);
+        break;
+    case '4':
+        printf("Enter the first unit  for the converstion \n");
+        scanf("%d", &first);
+        printf("%d meter = %0.2f feet", first, first * onemeter);
+    default:
+        printf("In default now");
+        break;
+    }
+}

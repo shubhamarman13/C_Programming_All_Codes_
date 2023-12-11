@@ -1,0 +1,28 @@
+/* CODE TO PRINT THE N ODD NUMBERS FROM 1 AND THEIR SUM*/
+#include <stdio.h>
+main()
+{int i,j,sum=0;
+printf("Enter the nth number of odd\n");
+scanf("%d",&j);
+for(i=1;i<=j;i=i+1){
+printf("%d\n",i*2-1);
+sum=sum+i*2-1;
+}
+printf("SUM=%d",sum);
+}
+
+/* OR */ 
+
+#include <stdio.h>
+main()
+{int i,j,sum=0;
+printf("Enetr the nth number of odd\n");
+scanf("%d",&j);
+j=1+(j-1)*2;
+// printf("%d",j);
+for (i=1;i<=j;i=i+2){
+printf("%d\n",i);
+sum=sum+i;
+}
+printf("sum=%d",sum);
+}
